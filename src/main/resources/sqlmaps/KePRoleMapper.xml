@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmail.demo.dao.KePRoleMapper">
+    <resultMap id="BaseResultMap" type="com.jmail.demo.dao.model.KePRole">
+        <!--
+        @mbggenerated
+        -->
+        <id column="id" jdbcType="TINYINT" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="seq" jdbcType="TINYINT" property="seq" />
+        <result column="description" jdbcType="VARCHAR" property="description" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--
+        @mbggenerated
+        -->
+        id, name, seq, description
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--
+        @mbggenerated
+        -->
+        select 
+        <include refid="Base_Column_List" />
+        from ke_p_role
+        where id = #{id,jdbcType=TINYINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--
+        @mbggenerated
+        -->
+        delete from ke_p_role
+        where id = #{id,jdbcType=TINYINT}
+    </delete>
+    <insert id="insert" parameterType="com.jmail.demo.dao.model.KePRole">
+        <!--
+        @mbggenerated
+        -->
+        insert into ke_p_role (id, name, seq, 
+            description)
+        values (#{id,jdbcType=TINYINT}, #{name,jdbcType=VARCHAR}, #{seq,jdbcType=TINYINT}, 
+            #{description,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" parameterType="com.jmail.demo.dao.model.KePRole">
+        <!--
+        @mbggenerated
+        -->
+        insert into ke_p_role
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="seq != null">
+                seq,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=TINYINT},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="seq != null">
+                #{seq,jdbcType=TINYINT},
+            </if>
+            <if test="description != null">
+                #{description,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.jmail.demo.dao.model.KePRole">
+        <!--
+        @mbggenerated
+        -->
+        update ke_p_role
+        <set>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="seq != null">
+                seq = #{seq,jdbcType=TINYINT},
+            </if>
+            <if test="description != null">
+                description = #{description,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=TINYINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.jmail.demo.dao.model.KePRole">
+        <!--
+        @mbggenerated
+        -->
+        update ke_p_role
+        set name = #{name,jdbcType=VARCHAR},
+            seq = #{seq,jdbcType=TINYINT},
+            description = #{description,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=TINYINT}
+    </update>
+    <select id="querySelective" parameterType="java.util.Map" resultMap="BaseResultMap">
+        <!--
+        @mbggenerated
+        -->
+        select id, name, seq, description
+        from ke_p_role
+        <where>
+            <if test="id != null ">
+                 and id = #{id,jdbcType=TINYINT}
+            </if>
+            <if test="name != null ">
+                 and name = #{name,jdbcType=VARCHAR}
+            </if>
+            <if test="seq != null ">
+                 and seq = #{seq,jdbcType=TINYINT}
+            </if>
+            <if test="description != null ">
+                 and description = #{description,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+</mapper>

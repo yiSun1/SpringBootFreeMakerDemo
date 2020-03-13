@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<!--生成带注释的实体及Mapper 方法-->
+<generatorConfiguration>
+
+    <classPathEntry
+            location="D:\workSpace\MavenWork\repository\mysql\mysql-connector-java\5.1.9\mysql-connector-java-5.1.9.jar"/>
+
+    <context id="Mysql2Tables" targetRuntime="MyBatis3">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+        <commentGenerator type="org.mybatis.generator.internal.DG2CommentGenerator">
+            <property name="javaFileEncoding" value="UTF-8"/>
+            <property name="suppressAllComments" value="false"/>
+            <property name="suppressDate" value="true"/>
+            <property name="author" value="zhangxs7"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/ke3?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaTypeResolver type="org.mybatis.generator.internal.types.PandaJavaTypeResolverDefaultImpl">
+            <property name="forceBigDecimals" value="true"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.jmail.demo.dao.model" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="sqlmaps" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jmail.demo.dao"
+                             targetProject="src/main/java">
+            <property name="enableSubPckages" value="true"/>
+        </javaClientGenerator>
+
+        <!--<table tableName="bank_settle_bill_flow" domainObjectName="BankSettleBillFlow"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--</table>-->
+        <!--<table tableName="fabaseinfoes" domainObjectName="FaBaseInfoes"-->
+               <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false">-->
+            <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+            <!--<columnOverride column="Address" jdbcType="VARCHAR"/>-->
+            <!--<columnOverride column="Email2" jdbcType="VARCHAR"/>-->
+            <!--<columnOverride column="Email" jdbcType="VARCHAR"/>-->
+            <!--<columnOverride column="FAName" jdbcType="VARCHAR"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="productsedit" domainObjectName="ProductsEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="remark" value=""/>-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--<columnOverride column="PcPromotion" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="WapPromotion" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="AppPromotion" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="WeixinPromotion" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="ExtensionContent" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="levelPrice" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="Bak" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+        <!--<table tableName="goodsinfoesedit" domainObjectName="GoodsInfoesEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--<columnOverride column="Brief" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="KeyWords" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="PcIntroduction" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="MIntroduction" jdbcType="VARCHAR" />-->
+        <!--<columnOverride column="Bak" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+
+        <!--<table tableName="fileattachments" domainObjectName="FileAttachments"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="goodsinfodetailpicturesedit" domainObjectName="GoodsInfoDetailPicturesEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--<columnOverride column="Bak" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+
+        <!--<table tableName="goodsinfoparametersedit" domainObjectName="GoodsInfoParametersEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--<columnOverride column="ParaValue" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+
+
+        <!--<table tableName="goodsinfoservicegoodsinfoesedit" domainObjectName="GoodsinfoServiceGoodsInfoesEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--<columnOverride column="Bak" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+
+        <!--<table tableName="goodsinfospecificationsedit" domainObjectName="GoodsInfoSpecificationsEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc"/>-->
+        <!--<columnOverride column="Bak" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+
+        <!--<table tableName="goodsspecificationdetailsedit" domainObjectName="GoodsSpecificationDetailsEdit"-->
+        <!--enableSelectByExample="false" enableDeleteByExample="false"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false" >-->
+        <!--<property name="selectAllOrderByClause" value="CreateTime desc,SortOrder asc"/>-->
+        <!--<columnOverride column="SpecificationValeName" jdbcType="VARCHAR" />-->
+        <!--</table>-->
+
+        <table tableName="ke_p_role" domainObjectName="KePRole"
+               enableSelectByExample="false" enableDeleteByExample="false"
+               enableCountByExample="false" enableUpdateByExample="false" >
+            <property name="selectAllOrderByClause" value="CreateTime desc"/>
+            <columnOverride column="owner" jdbcType="VARCHAR" />
+        </table>
+
+
+    </context>
+
+</generatorConfiguration>

@@ -1,0 +1,151 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 0 .1rem;
+    box-sizing: border-box;
+    height: .6rem;
+    background: #2bb9ad;
+    position: fixed;
+    z-index: 99;
+}
+
+header .head {
+    width: 98%;
+    margin-left: 1%;
+    height: .6rem;
+    line-height: .6rem;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: .01rem solid #1a887f;
+    position: relative;
+    z-index: 999;
+}
+
+header .head p {
+    font-size: .28rem;
+}
+
+header .back {
+    position: absolute;
+    left: 0;
+    font-size: .36rem;
+    color: #ffffff;
+}
+
+section {
+    width: 100%;
+    padding-top: .6rem;
+}
+
+section .integral {
+    width: 100%;
+    height: 2.32rem;
+    background: #2bb9ad;
+}
+
+section .integralPic {
+    position: absolute;
+    width: 5.52rem;
+    height: 2.43rem;
+    top: 1.14rem;
+    left: 1rem;
+}
+
+section .integralPic img {
+    width: 5.52rem;
+    height: 2.43rem;
+}
+
+section .integralPic .count {
+    color: #f46500;
+    font-size: .7rem;
+    position: absolute;
+    right: .5rem;
+    top: .78rem;
+}
+
+section .hg {
+    width: .63rem;
+    height: .08rem;
+    background: #f46500;
+    position: absolute;
+    margin-left: 3.43rem;
+    margin-top: .8rem;
+}
+
+section .myOrder {
+    width: 6.4rem;
+    margin-left: .55rem;
+    margin-top: 1rem;
+}
+
+section .myOrder .tit {
+    width: 100%;
+    border-bottom: .01rem solid #a9a9aa;
+    height: .45rem;
+    font-size: .3rem;
+    padding: 0 .1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .myOrder .tit img {
+    width: .22rem;
+    height: .22rem;
+    margin-right: .06rem;
+}
+
+section .myOrder .tit .left {
+    color: #313f8a;
+    font-size: 0.28rem;
+}
+
+section .myOrder .tit .right span {
+    color: #a9adc3;
+    margin: 0 .1rem;
+    font-size: 0.28rem;
+    padding:0 0.2rem;
+    display:inline-block;
+    line-height:0.45rem;
+
+}
+
+section .myOrder .tit .right .high {
+    color: #fe840a;
+    border-bottom: .01rem solid #fe840a;
+}
+
+section .myOrder .list {
+    width: 100%;
+}
+
+section .myOrder .list li {
+    height: 1.14rem;
+    background: url("https://p3.lefile.cn/product/adminweb/2019/01/29/2165301c-cabe-4185-9036-9681e9d6f9dd.png") no-repeat center center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .2rem;
+    padding: 0 .25rem;
+    margin-bottom: .15rem;
+}
+
+section .myOrder .list li .left .payee {
+    font-size: .26rem;
+}
+
+section .myOrder .list li .left .time {
+    font-size: .24rem;
+}
+
+section .myOrder .list li .right {
+    font-size: .28rem;
+}
+
+/*# sourceMappingURL=zdym.css.map */

@@ -1,0 +1,167 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 0 .1rem;
+    box-sizing: border-box;
+    height: 1rem;
+}
+
+header .head {
+    width: 98%;
+    margin-left: 1%;
+    height: 1rem;
+    line-height: 1rem;
+    color: #27837b;
+    text-align: center;
+    border-bottom: .01rem solid #2bb9ad;
+    position: relative;
+}
+
+header .head p {
+    font-size: .34rem;
+}
+
+header .back {
+    position: absolute;
+    left: 0;
+    font-size: .36rem;
+    color: #27837b;
+}
+
+section {
+    width: 100%;
+    margin-top: .8rem;
+    box-sizing: border-box;
+}
+
+section .banner {
+    margin: 0 auto;
+    width: 5.31rem;
+    height: 6.84rem;
+    position: relative;
+}
+
+section .banner .pic {
+    width: 5.31rem;
+    height: 6.84rem;
+}
+
+section .banner .pic img {
+    width: 100%;
+}
+
+section .banner .tit {
+    font-size: .48rem;
+    color: #dc2a2c;
+    font-weight: normal;
+    position: absolute;
+    top: 1.48rem;
+    left: 50%;
+    margin-left: -1.1rem;
+}
+
+section .banner .money {
+    position: absolute;
+    top: 2.1rem;
+    /*left: 50%;*/
+    /*margin-left: -1.07rem;*/
+    font-size: .45rem;
+    color: #dc2a2c;
+    width: 100%;
+    text-align: center;
+}
+
+section .banner .money span {
+    font-size: 1.46rem;
+}
+
+section .banner .grant {
+    width: 3rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #dc2a2c;
+    font-size: .48rem;
+    background: #ffffff;
+    border-radius: .3rem;
+    position: absolute;
+    bottom: .86rem;
+    left: 50%;
+    margin-left: -1.5rem;
+}
+
+section .cqdetail {
+    margin-top: .48rem;
+    font-size: .28rem;
+    color: #d52325;
+    text-align: center;
+}
+
+section .sqlq {
+    width: 3.13rem;
+    height: .6rem;
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.13);
+    margin-top: .4rem;
+    margin-bottom: .2rem;
+    text-align: center;
+    line-height: .6rem;
+    background: #27837b;
+    border-radius: .4rem;
+    color: #e4eaf2;
+    font-size: .32rem;
+    margin-left: 2.17rem;
+    cursor: pointer;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(218, 223, 229, 0.8);
+    z-index: 2;
+    display: none;
+}
+
+.mask .dialog {
+    width: 2.98rem;
+    height: 2.02rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.49rem;
+    margin-top: -1.01rem;
+    background: #ffffff;
+    border-radius: .1rem;
+    z-index: 22;
+    font-size: .3rem;
+}
+
+.mask .dialog .status {
+    color: #27837b;
+    font-size: .3rem;
+    line-height: .48rem;
+    margin-top: .4rem;
+    text-align: center;
+}
+
+.mask .dialog .sure {
+    width: 1.8rem;
+    height: .6rem;
+    text-align: center;
+    line-height: .6rem;
+    background: #27837b;
+    border-radius: .4rem;
+    font-size: .3rem;
+    color: #ffffff;
+    margin-left: .55rem;
+    margin-top: .3rem;
+    cursor: pointer;
+}
+
+/*# sourceMappingURL=ljlq.css.map */

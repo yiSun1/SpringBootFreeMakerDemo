@@ -21,9 +21,12 @@
 //public class FreemarkerConfig {
 //
 //    private static Logger log = LoggerFactory.getLogger(FreemarkerConfig.class);
+//    @Autowired
+//    private FreeMarkerProperties properties;
 //
 //    @Bean
-//    public FreeMarkerConfigurer freeMarkerConfigurer(@Value("${auto_import}") String autoImport, @Value("${auto_include}") String autoInclude) throws Exception {
+//    public FreeMarkerConfigurer freeMarkerConfigurer(@Value("${auto_import}") String autoImport,
+//                                                     @Value("${auto_include}") String autoInclude) throws Exception {
 //        FreeMarkerConfigurer config = new FreeMarkerConfigurer();
 //        writerProperties(config);
 //        Configuration configuration = null;
@@ -39,9 +42,6 @@
 //        config.setConfiguration(configuration);
 //        return config;
 //    }
-//
-//    @Autowired
-//    private FreeMarkerProperties properties;
 //
 //    private void writerProperties(FreeMarkerConfigurer config) {
 //        config.setTemplateLoaderPaths(this.properties.getTemplateLoaderPath());
@@ -75,10 +75,12 @@
 //        }
 //        String[] includes = autoInclude.split(";");
 //        for (String s : includes) {
-//            System.out.println(s);
+//            log.debug(s);
 //        }
 //        List list = new ArrayList<String>(Arrays.asList(includes));
 //        configuration.setAutoIncludes(list);
 //    }
+//
+//
 //}
 //

@@ -1,4 +1,5 @@
-<#include "/ftl/head.ftl"/>
+<#include "/ftl/layout.ftl">
+<@layout>
 <!-- TouchSpin -->
 <link href="/css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
 <script src="/js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
@@ -245,5 +246,4 @@
     }
 
 </script>
-
-<#include "/ftl/foot.ftl"/>
+</@layout>

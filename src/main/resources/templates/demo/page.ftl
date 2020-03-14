@@ -1,4 +1,5 @@
-<#include "/ftl/head.ftl"/>
+<#include "/ftl/layout.ftl"/>
+<@layout>
 <style>
     .form-group label{
         padding-left: 4px;
@@ -165,4 +166,4 @@
     }
 
 </script>
-<#include "/ftl/foot.ftl"/>
+</@layout>

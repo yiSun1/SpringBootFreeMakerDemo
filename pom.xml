@@ -137,6 +137,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--自动生成 Mapping Xml 的插件 使用时 解除注释 修改 resource下的 generatorConfig.xml 配置文件相关配置-->
             <!--<plugin>-->
             <!--<groupId>org.mybatis.generator</groupId>-->
             <!--<artifactId>mybatis-generator-maven-plugin</artifactId>-->
